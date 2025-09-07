@@ -1,0 +1,86 @@
+.review-post-page {
+    background-color: #fff;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.review-post-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgba(252, 252, 252, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: var(--color-text-primary);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--font-sans);
+    font-size: 15px;
+}
+
+.form-group textarea {
+    min-height: 200px;
+    resize: vertical;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.submit-button,
+.cancel-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font-sans);
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submit-button {
+    background-color: var(--color-accent);
+    color: white;
+}
+
+.submit-button:hover {
+    background-color: #a0998f;
+}
+
+.cancel-button {
+    background-color: #e0e0e0;
+    color: var(--color-text-primary);
+}
+
+.cancel-button:hover {
+    background-color: #d0d0d0;
+}

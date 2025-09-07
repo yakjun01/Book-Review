@@ -1,0 +1,77 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* 다른 요소 위에 표시 */
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    max-height: 80vh;
+    font-family: var(--font-sans);
+    color: var(--color-text-primary);
+}
+
+.modal-close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #888;
+}
+
+.modal-close-button:hover {
+    color: #333;
+}
+
+.modal-title {
+    font-family: var(--font-serif);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.modal-meta {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.modal-info {
+    margin-bottom: 25px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.modal-info p {
+    margin-bottom: 5px;
+}
+
+.modal-info strong {
+    font-weight: 700;
+}
+
+.modal-body-content {
+    line-height: 1.8;
+    font-size: 15px;
+    white-space: pre-wrap;
+}

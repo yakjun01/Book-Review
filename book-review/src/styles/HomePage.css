@@ -1,0 +1,78 @@
+/* 1. 하단 전체 배경 */
+.main-content-area {
+    background-image: url('/images/content-hanji-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    /* 미세한 마진 병합 현상 방지를 위한 코드 */
+    padding-top: 1px;
+    margin-top: -1px;
+}
+
+/* 2. 콘텐츠 중앙 정렬 및 여백 */
+.container {
+    max-width: 1000px; /* 콘텐츠의 최대 너비 */
+    margin-left: auto; /* 자동으로 왼쪽 여백 계산 */
+    margin-right: auto; /* 자동으로 오른쪽 여백 계산 */
+
+    /* 콘텐츠 영역의 위아래 여백 */
+    padding-top: 100px;
+    padding-bottom: 120px;
+
+    /* 콘텐츠 영역의 좌우 최소 여백 (화면이 작아졌을 때 대비) */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* --- 3. 섹션별 그리드 스타일 --- */
+
+/* 베스트셀러: 4열 그리드 */
+.bestsellers__grid {
+    display: grid;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+/* 장르: 3열 그리드 */
+.genres__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.genre-item__image {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    /* 이미지가 없을 때를 위한 배경색 */
+    background-color: #a99985;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 15px auto;
+    transition: transform 0.3s ease;
+}
+
+.genre-item:hover .genre-item__image {
+    transform: scale(1.05);
+}
+
+.genre-item p {
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--color-accent);
+}
+
+.new-arrivals__grid {
+    display: grid;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 15px;
+}

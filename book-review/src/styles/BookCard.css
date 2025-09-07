@@ -1,0 +1,46 @@
+/* src/styles/BookCard.css */
+
+.book-card {
+    display: block;
+    text-align: left;
+}
+.book-card-image-container {
+    width: 100%;
+    padding-top: 120%; /* 이미지를 위한 비율 공간 확보 (세로가 긴 직사각형) */
+    position: relative;
+    margin-bottom: 16px;
+    background-color: var(--color-placeholder-bg);
+    overflow: hidden; /* 이미지가 넘치는 것을 방지 */
+    transition: transform 0.3s ease;
+}
+.book-card:hover .book-card-image-container {
+    transform: scale(1.03);
+}
+.book-card-image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 이미지가 잘리지 않고 전체가 보이도록! */
+    background-color: transparent; /* 이미지 주변 여백을 투명하게 */
+}
+.no-image-placeholder {
+    /* 이미지가 없을 때 배경색만 표시되는 div */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-placeholder-bg);
+}
+.book-card-title {
+    font-family: var(--font-serif);
+    font-size: 18px;
+    margin: 0 0 6px 0;
+}
+.book-card-author {
+    font-size: 15px;
+    color: var(--color-accent);
+    margin: 0;
+}

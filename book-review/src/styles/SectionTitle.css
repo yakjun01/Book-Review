@@ -1,0 +1,18 @@
+.section-title-wrapper {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.section-title {
+    font-family: var(--font-serif);
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 0 8px 0;
+    color: var(--color-text-primary);
+    letter-spacing: 1px;
+}
+.section-subtitle {
+    font-size: 15px;
+    color: var(--color-accent);
+    margin: 0;
+}

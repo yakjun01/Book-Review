@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Inter:wght@400;500;700&display=swap');
+
+:root {
+    --font-serif: 'Marcellus', serif;
+    --font-sans: 'Inter', 'Pretendard', sans-serif;
+
+    --color-background: #fdfbf6;
+    --color-container: #ffffff;
+    --color-text-primary: #3c3c3c;
+    --color-accent: #8d7b68;
+    --color-placeholder-bg: #a99985;
+    --color-footer-bg: #333333;
+    --color-footer-text: #eaeaea;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-sans);
+    color: var(--color-text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* --- 이 부분을 추가/수정하세요 --- */
+    /* 1. 배경 이미지 설정 */
+    background-image: url('/images/hanji-background.jpg'); /* <-- 사용할 한지 이미지 경로 */
+
+    /* 2. 배경 이미지를 화면에 꽉 채우기 */
+    background-size: cover;
+
+    /* 3. 스크롤해도 배경은 움직이지 않도록 고정 */
+    background-attachment: fixed;
+
+    /* 4. 배경 이미지 중앙 정렬 */
+    background-position: center;
+
+    /* 5. 배경 이미지 반복 안 함 */
+    background-repeat: no-repeat;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
