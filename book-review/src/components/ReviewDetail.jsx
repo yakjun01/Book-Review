@@ -21,7 +21,7 @@ export default function ReviewDetail({ isOpen, onClose, review }) {
                         </div>
                         <div className="modal-info">
                             <p>
-                                <strong>책 제목:</strong> {review.bookTitle}
+                                <strong>책 제목:</strong> {review.book_title}
                             </p>
                             <p>
                                 <strong>장르:</strong> {review.genre}

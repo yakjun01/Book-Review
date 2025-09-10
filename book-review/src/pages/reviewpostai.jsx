@@ -4,11 +4,11 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 // import SectionTitle from '../components/SectionTitle';
-// import '../styles/ReviewPost.css'; // 경로 오류 문제를 해결하기 위해 CSS를 컴포넌트 내부에 포함시킵니다.
+// import '../styles/ReviewPost.css'; // 경로 오류 문제를 해결하기 위해 CSS를 컴포넌트 내부에 포함
 
 const genresData = ['소설', '에세이', '인문', '자기계발', '예술', 'IT/공학'];
 
-// CSS를 컴포넌트 내부에 직접 정의하여 경로 문제를 해결합니다.
+// CSS를 컴포넌트 내부에 직접 정의하여 경로 문제를 해결
 const ReviewPostStyles = () => (
     <style>{`
     .review-post-page {

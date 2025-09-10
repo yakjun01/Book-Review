@@ -4,9 +4,9 @@ import Hero from '../components/Hero';
 import '../styles/HomePage.css';
 
 const HomePage = () => {
-    // useEffect가 현재는 비어있지만, 나중에 데이터 로딩 등을 위해 남겨두었습니다.
+    // useEffect가 현재는 비어있지만, 나중에 데이터 로딩 등을 위해 남겨두었음
     useEffect(() => {
-        // 예: const fetchBooks = async () => { ... }
+        // ex) const fetchBooks = async () => { ... }
     }, []);
 
     return (

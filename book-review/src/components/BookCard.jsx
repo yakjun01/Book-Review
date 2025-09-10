@@ -10,7 +10,6 @@ const BookCard = ({ image, title, author }) => {
                 {image ? (
                     <img src={image} alt={`${title} cover`} />
                 ) : (
-                    // 이미지가 없을 때 회색 배경을 보여주는 placeholder div
                     <div className="no-image-placeholder"></div>
                 )}
             </div>
